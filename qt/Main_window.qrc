@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/graphene">
+        <file>../../../icons/Graphene.xpm</file>
+        <file>../../../icons/edit-select.png</file>
+        <file>../../../icons/edit-node.png</file>
+        <file>../../../icons/features.png</file>
+        <file>../../../icons/transform-move.png</file>
+        <file>../../../icons/document-close.png</file>
+        <file>../../../icons/document-save-as.png</file>
+        <file>../../../icons/document-open.png</file>
+        <file>../../../icons/document-save.png</file>
+        <file>../../../icons/document-revert.png</file>
+        <file>../../../icons/view-fullscreen.png</file>
+        <file>../../../icons/go-home.png</file>
+        <file>../../../icons/restore-home.png</file>
+        <file>../../../icons/set-home.png</file>
+        <file>../../../icons/analysis.png</file>
+        <file>../../../icons/decimation.png</file>
+        <file>../../../icons/modelling.png</file>
+        <file>../../../icons/reconstruction.png</file>
+        <file>../../../icons/remeshing.png</file>
+        <file>../../../icons/selection.png</file>
+        <file>../../../icons/smoothing.png</file>
+        <file>../../../icons/subdivision.png</file>
+        <file>../../../icons/empty.png</file>
+        <file>../../../icons/povray.png</file>
+        <file>../../../icons/preferences-system.png</file>
+        <file>../../../icons/scene_graph.png</file>
+        <file>../../../icons/screenshot.png</file>
+        <file>../../../icons/knot.png</file>
+    </qresource>
+</RCC>

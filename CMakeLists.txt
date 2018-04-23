@@ -1,0 +1,6 @@
+add_subdirectory(geometry)
+add_subdirectory(scene_graph)
+add_subdirectory(qt)
+add_subdirectory(surface_mesh)
+add_subdirectory(gl)
+add_subdirectory(utility)
