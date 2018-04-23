@@ -209,46 +209,46 @@ namespace graphene {
 												}
 												if (!flag)
 												{
-													mesh.join(Surface_mesh::FeatureLine(fit_id), l);
-													if (mesh.from_vertex(*hit) == vhead)
-													{
-														if (mesh.get_exten(l) == 3||mesh.get_exten(l) == 1)
-														{
-															Surface_mesh::FeatureVertex new_v1;
-															mesh.insert_head_vertex(l, mesh.add_feature_vertex(vpoints[*fvit1]), -1);
-															mesh.update_featureLine(l, *fvit1, true);
-															new_v1 = mesh.find_shortest_distance_point(Surface_mesh::FeatureLine(fit_id), vpoints[*fvit1]);
-															if (new_v1.is_valid())
-															{
-																mesh.insert_head_vertex(l, new_v1, -1);
-																if (mesh.get_exten(l) == 3)
-																	mesh.set_exten(l, 2);
-																else
-																	mesh.set_exten(l, 0);
-															}
-														}
-													}
-													else
-													{
-														if (mesh.get_exten(l) == 3 || mesh.get_exten(l) == 2)
-														{
-															Surface_mesh::FeatureVertex new_v2;
-															//new_v2 = mesh.add_feature_vertex(fpoints[mesh.find_shortest_distance_point(Surface_mesh::FeatureLine(fit_id), vpoints[*fvit1])]);
-															mesh.insert_tail_vertex(l, mesh.add_feature_vertex(vpoints[*fvit1]), -1);
-															mesh.update_featureLine(l, *fvit1, false);
-															new_v2 = mesh.find_shortest_distance_point(Surface_mesh::FeatureLine(fit_id), vpoints[*fvit1]);
-															if (new_v2.is_valid())
-															{
-																mesh.insert_tail_vertex(l, new_v2, -1);
-																if (mesh.get_exten(l) == 3)
-																	mesh.set_exten(l, 1);
-																else
-																	mesh.set_exten(l, 0);
-															}
-														}
-													}
-													connect_cache.push_back(Connect(fit_id, f_id));
-												}
+												//	mesh.join(Surface_mesh::FeatureLine(fit_id), l);
+												//	if (mesh.from_vertex(*hit) == vhead)
+												//	{
+												//		if (mesh.get_exten(l) == 3||mesh.get_exten(l) == 1)
+												//		{
+												//			Surface_mesh::FeatureVertex new_v1;
+												//			mesh.insert_head_vertex(l, mesh.add_feature_vertex(vpoints[*fvit1]), -1);
+												//			mesh.update_featureLine(l, *fvit1, true);
+												//			new_v1 = mesh.find_shortest_distance_point(Surface_mesh::FeatureLine(fit_id), vpoints[*fvit1]);
+												//			if (new_v1.is_valid())
+												//			{
+												//				mesh.insert_head_vertex(l, new_v1, -1);
+												//				if (mesh.get_exten(l) == 3)
+												//					mesh.set_exten(l, 2);
+												//				else
+												//					mesh.set_exten(l, 0);
+												//			}
+												//		}
+												//	}
+												//	else
+												//	{
+												//		if (mesh.get_exten(l) == 3 || mesh.get_exten(l) == 2)
+												//		{
+												//			Surface_mesh::FeatureVertex new_v2;
+												//			//new_v2 = mesh.add_feature_vertex(fpoints[mesh.find_shortest_distance_point(Surface_mesh::FeatureLine(fit_id), vpoints[*fvit1])]);
+												//			mesh.insert_tail_vertex(l, mesh.add_feature_vertex(vpoints[*fvit1]), -1);
+												//			mesh.update_featureLine(l, *fvit1, false);
+												//			new_v2 = mesh.find_shortest_distance_point(Surface_mesh::FeatureLine(fit_id), vpoints[*fvit1]);
+												//			if (new_v2.is_valid())
+												//			{
+												//				mesh.insert_tail_vertex(l, new_v2, -1);
+												//				if (mesh.get_exten(l) == 3)
+												//					mesh.set_exten(l, 1);
+												//				else
+												//					mesh.set_exten(l, 0);
+												//			}
+												//		}
+												//	}
+												//	connect_cache.push_back(Connect(fit_id, f_id));
+												//}
 												//break;
 											}
 											/*else
